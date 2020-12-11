@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN FORM</title>
+    <script src="https://kit.fontawesome.com/0abfe75445.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <section class="sign-in">
+      <div class="main-page">
+          <div class="name">
+              <h1>ADU VAI</h1>
+              <p>Website Login Form</p>
+          </div>
+          <div class="form-btns">
+              <button class="s-btn">Sign In</button>
+              <button class="f-btn">Sign In with Facebook </button>
+              <a href="#" class="new-btn"> New account? </a>
+          </div>
+          <div class="cancel">
+              <a href="#"><i class="fas fa-times"></i></a>
+          </div>
+      </div>
+      <div class="sign-in-page">
+          <form>
+              <input type="email" placeholder="Email">
+              <input type="password" placeholder="Password">
+              <button>Sign In</button>
+          </form>
+      </div>
+      <div class="sign-up-page">
+          <form>
+              <input type="email" placeholder="Email">
+              <input type="password" placeholder="Password">
+              <input type="password" placeholder="Repeat Password">
+              <button>Sign Up</button>
+          </form>
+      </div>
+      
+       
+   </section>
+    
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" type="text/javascript"></script>
+    
+    <script>
+        $(document).on('click', '.s-btn', function(){
+            $('.sign-in').addClass('active-sign-in');
+            $(".name").animate({top :'20%'}, 300);
+        });
+        
+        $(document).on('click', '.new-btn', function(){
+            $('.sign-in').addClass('active-sign-up');
+            $(".name").animate({top :'20%'}, 300);
+        });
+        
+        $('.cancel a').click(function(){
+            $('.sign-in').removeClass('active-sign-in');
+            $('.sign-in').removeClass('active-sign-up');
+            $(".name").animate({top :'50%'}, 250);
+        });
+        
+    </script>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
